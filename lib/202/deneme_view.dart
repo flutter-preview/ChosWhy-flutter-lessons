@@ -10,8 +10,8 @@ class DenemeView extends StatefulWidget {
 
 class _DenemeViewState extends State<DenemeView> {
   final PostModel2 model2 = PostModel2("furkan", "naber", 1, 2);
-  PostModel model1 = PostModel();
-  PostModel model11 = PostModel();
+  PostModel1 model1 = PostModel1();
+  PostModel1 model11 = PostModel1();
   final PostModel3 model3 = PostModel3(1, 1, "title", "body");
   final PostModel4 model4 = PostModel4(userId: 1, id: 1, title: "selam", body: "napıyosun");
   final PostModel5 model5 = PostModel5(userId: 1, id: 2, body: "body", title: "title");

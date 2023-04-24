@@ -5,7 +5,7 @@
 ///sınıfın ismi neymiş postmuş okey postModel olsun
 ///şimdi ben bu servise baktıgımda ne görüyorum userId,id,title,body o zaman bunları almam gerekiyor
 ///ama sunu da görüyorum bana ne döndürüyor sayfanın genel parantezi array(list) buna dikkat
-class PostModel {
+class PostModel1 {
   int? userId;
   int? id;
   String? title;

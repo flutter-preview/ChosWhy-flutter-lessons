@@ -9,11 +9,14 @@ import 'package:lessonone/101/statefull_life_cycle_learn.dart';
 import 'package:lessonone/101/text_field_learn.dart';
 import 'package:lessonone/202/deneme.dart';
 import 'package:lessonone/202/model_learn_view.dart';
+import 'package:lessonone/202/service/deneme.dart';
+import 'package:lessonone/202/service/service_learn_view.dart';
 import 'package:lessonone/202/tab_learn.dart';
 import 'package:lessonone/demos/color_demos_view.dart';
 import 'package:lessonone/demos/color_life_cycle.dart';
 import '101/color_learn.dart';
 import '202/deneme_view.dart';
+import '202/service/service_learn_view_advance.dart';
 import 'demos/my_collections_demos.dart';
 import 'demos/stack_demo_view.dart';
 void main() {
@@ -87,7 +90,7 @@ class Main extends StatelessWidget {
           padding: EdgeInsets.zero,
         )
       ),
-      home: const DenemeView(),
+      home: const DenemeServisi(),
       debugShowCheckedModeBanner: false,
     );
   }
