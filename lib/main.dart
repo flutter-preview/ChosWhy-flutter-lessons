@@ -12,11 +12,15 @@ import 'package:lessonone/202/model_learn_view.dart';
 import 'package:lessonone/202/service/deneme.dart';
 import 'package:lessonone/202/service/service_learn_view.dart';
 import 'package:lessonone/202/tab_learn.dart';
+import 'package:lessonone/202/theme/light_theme.dart';
 import 'package:lessonone/demos/color_demos_view.dart';
 import 'package:lessonone/demos/color_life_cycle.dart';
 import '101/color_learn.dart';
 import '202/deneme_view.dart';
+import '202/package_learn_view.dart';
 import '202/service/service_learn_view_advance.dart';
+import '202/theme_learn_view.dart';
+import '202/widget_size_enum_learn_view.dart';
 import 'demos/my_collections_demos.dart';
 import 'demos/stack_demo_view.dart';
 void main() {
@@ -35,7 +39,9 @@ class Main extends StatelessWidget {
       ///burdan tüm appbarlarda tittle hepsinde ortada olsun diyoruz örnegin bu
       ///bunları 1 kez verdigimde tüm app arayüz sayfalarımda aynı standartı görmüş olucam!
       ///yine de bazı özelleştirmelerde o sayfanın özelleştirmek istedigini yazabilirsin.
-      theme: ThemeData.dark().copyWith(
+      theme: LightTheme().theme,
+      /*
+      ThemeData.dark().copyWith(
         listTileTheme: const ListTileThemeData(
           contentPadding: EdgeInsets.zero,
           dense: true,
@@ -90,7 +96,8 @@ class Main extends StatelessWidget {
           padding: EdgeInsets.zero,
         )
       ),
-      home: const DenemeServisi(),
+       */
+      home: const WidgetSizeEnumLearnView(),
       debugShowCheckedModeBanner: false,
     );
   }

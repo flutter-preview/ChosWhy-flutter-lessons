@@ -15,7 +15,6 @@ abstract class IPostService{
 class PostService implements IPostService{
   final Dio _networkManager; //_networkManager yazımı bu 2 kod satırı
   PostService() : _networkManager = Dio(BaseOptions(baseUrl: "https://jsonplaceholder.typicode.com/"));
-  final Dio _dio = Dio(BaseOptions(baseUrl: "https://jsonplaceholder.typicode.com/"));
 
   @override
   Future<bool> addItemToService(PostModel postModel) async {
