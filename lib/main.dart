@@ -17,6 +17,7 @@ import 'package:lessonone/demos/color_demos_view.dart';
 import 'package:lessonone/demos/color_life_cycle.dart';
 import '101/color_learn.dart';
 import '202/deneme_view.dart';
+import '202/image_learn_202.dart';
 import '202/package_learn_view.dart';
 import '202/service/service_learn_view_advance.dart';
 import '202/theme_learn_view.dart';
@@ -97,7 +98,7 @@ class Main extends StatelessWidget {
         )
       ),
        */
-      home: const WidgetSizeEnumLearnView(),
+      home: const ImageLearn202(),
       debugShowCheckedModeBanner: false,
     );
   }
