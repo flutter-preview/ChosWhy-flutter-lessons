@@ -16,6 +16,11 @@ import 'package:lessonone/202/theme/light_theme.dart';
 import 'package:lessonone/demos/color_demos_view.dart';
 import 'package:lessonone/demos/color_life_cycle.dart';
 import '101/color_learn.dart';
+import '202/animations/five_animation_container.dart';
+import '202/animations/four_animated_icon.dart';
+import '202/animations/seven_animation_pasitioned.dart';
+import '202/animations/six_animated_list.dart';
+import '202/animations/three_animation_text.dart';
 import '202/deneme_view.dart';
 import '202/image_learn_202.dart';
 import '202/package_learn_view.dart';
@@ -98,7 +103,7 @@ class Main extends StatelessWidget {
         )
       ),
        */
-      home: const ImageLearn202(),
+      home: const AnimatedPositionedView(),
       debugShowCheckedModeBanner: false,
     );
   }

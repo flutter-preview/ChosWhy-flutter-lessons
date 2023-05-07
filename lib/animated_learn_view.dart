@@ -1,1 +1,0 @@
-///knk burda kaldık!

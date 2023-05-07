@@ -23,7 +23,7 @@ class LightTheme {
         side: const BorderSide(color: Colors.green),
         fillColor: MaterialStateProperty.all(Colors.green),
       ),
-      scaffoldBackgroundColor: Colors.white70.withOpacity(0.6),
+      scaffoldBackgroundColor: Colors.white70.withOpacity(0.9),
       appBarTheme: const AppBarTheme(
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(bottom: Radius.circular(20))),
