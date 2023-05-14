@@ -9,6 +9,7 @@ import 'package:lessonone/101/statefull_life_cycle_learn.dart';
 import 'package:lessonone/101/text_field_learn.dart';
 import 'package:lessonone/202/deneme.dart';
 import 'package:lessonone/202/model_learn_view.dart';
+import 'package:lessonone/202/oop_learn_view.dart';
 import 'package:lessonone/202/service/deneme.dart';
 import 'package:lessonone/202/service/service_learn_view.dart';
 import 'package:lessonone/202/tab_learn.dart';
@@ -25,6 +26,7 @@ import '202/deneme_view.dart';
 import '202/image_learn_202.dart';
 import '202/package_learn_view.dart';
 import '202/service/service_learn_view_advance.dart';
+import '202/state_manage/state_manage_learn_view.dart';
 import '202/theme_learn_view.dart';
 import '202/widget_size_enum_learn_view.dart';
 import 'demos/my_collections_demos.dart';
@@ -103,7 +105,7 @@ class Main extends StatelessWidget {
         )
       ),
        */
-      home: const AnimatedPositionedView(),
+      home: const StateManageLearnView(),
       debugShowCheckedModeBanner: false,
     );
   }
