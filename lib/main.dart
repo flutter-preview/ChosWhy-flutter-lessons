@@ -23,6 +23,7 @@ import '202/animations/seven_animation_pasitioned.dart';
 import '202/animations/six_animated_list.dart';
 import '202/animations/three_animation_text.dart';
 import '202/deneme_view.dart';
+import '202/form_learn_view.dart';
 import '202/image_learn_202.dart';
 import '202/package_learn_view.dart';
 import '202/service/service_learn_view_advance.dart';
@@ -105,7 +106,7 @@ class Main extends StatelessWidget {
         )
       ),
        */
-      home: const StateManageLearnView(),
+      home: const FormLearnView(),
       debugShowCheckedModeBanner: false,
     );
   }
