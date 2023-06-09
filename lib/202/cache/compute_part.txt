@@ -1,0 +1,52 @@
+
+Kodunuzda UserCacheManager sınıfınızı oluşturmuşsunuz ve saveItems() ve getItems() metotlarıyla verileri kaydetmeyi ve almayı hedefliyorsunuz. Ancak, verileri kaydederken ve alırken compute işlevini kullanmanız gerekmektedir.
+
+compute fonksiyonu, hesaplama işlemlerini ana iş parçacığından ayırarak arka planda gerçekleştirmenizi sağlar. Bu sayede uygulamanızın kullanıcı arayüzü donmaz ve daha iyi bir performans elde edersiniz.
+
+İşte saveItems() ve getItems() metotlarınızı compute fonksiyonunu kullanacak şekilde güncelleyelim:
+
+dart
+Copy code
+import 'dart:convert';
+import 'package:flutter/foundation.dart';
+
+// ...
+
+class UserCacheManager {
+  final SharedManager sharedManager;
+
+  UserCacheManager(this.sharedManager);
+
+  Future<void> saveItems(final List<User> items) async {
+    await compute(_saveItemsBackground, items);
+  }
+
+  static Future<void> _saveItemsBackground(final List<User> items) async {
+    final List<String> _items =
+        items.map((element) => jsonEncode(element.toJson())).toList();
+    await sharedManager.saveStringItems(SharedKeys.users, _items);
+  }
+
+  List<User>? getItems() {
+    final itemsString = sharedManager.getStringItems(SharedKeys.users);
+    if (itemsString?.isNotEmpty ?? false) {
+      return compute(_getItemsBackground, itemsString);
+    }
+    return null;
+  }
+
+  static List<User> _getItemsBackground(final List<String> itemsString) {
+    return itemsString.map((element) {
+      final jsonObject = jsonDecode(element);
+      if (jsonObject is Map<String, dynamic>) {
+        return User.fromJson(jsonObject);
+      }
+      return User(name: "", description: "", url: "");
+    }).toList();
+  }
+}
+Yukarıdaki kodda, saveItems() metodu artık compute fonksiyonunu kullanarak _saveItemsBackground() fonksiyonunu arka planda çalıştırıyor. Benzer şekilde, getItems() metodu da compute fonksiyonunu kullanarak _getItemsBackground() fonksiyonunu arka planda çalıştırıyor.
+
+_saveItemsBackground() ve _getItemsBackground() fonksiyonları, veri işleme süreçlerini gerçekleştirir ve sonuçları döndürür.
+
+Bu şekilde UserCacheManager sınıfınızda compute fonksiyonunu kullanarak verileri arka planda işleyebilir ve performansı artırabilirsiniz. Böylece, emulatorde verileri görebilmelisiniz.

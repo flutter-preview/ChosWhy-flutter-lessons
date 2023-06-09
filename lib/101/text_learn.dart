@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class TextLearnView extends StatelessWidget {
-  TextLearnView({Key? key,}) : super(key: key);
+  TextLearnView({
+    Key? key,
+  }) : super(key: key);
   final ProjectKeys keys = ProjectKeys();
 
   @override
@@ -27,8 +29,10 @@ class TextLearnView extends StatelessWidget {
           maxLines: 2,
           textAlign: TextAlign.right,
           style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-            color: ProjectColors.welcomeColor,
-          ),///burda ne yapıyoruz headline5 in tum özelliklerini al ama copywith ile de eziyoruz bazı özelliklerini
+                color: ProjectColors.welcomeColor,
+              ),
+
+          ///burda ne yapıyoruz headline5 in tum özelliklerini al ama copywith ile de eziyoruz bazı özelliklerini
         ),
       ],
     )));
@@ -38,15 +42,15 @@ class TextLearnView extends StatelessWidget {
 class ProjectKeys {
   final String welcome = "Welcome";
 }
-class ProjectColors{
+
+class ProjectColors {
   static Color welcomeColor = Colors.red;
 }
 
-class ProjectStyles{
+class ProjectStyles {
   static TextStyle welcomeStyle = const TextStyle(
       decoration: TextDecoration.underline,
       fontSize: 15,
       fontStyle: FontStyle.italic);
 }
-
 

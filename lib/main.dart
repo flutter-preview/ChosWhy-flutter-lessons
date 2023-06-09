@@ -22,6 +22,9 @@ import '202/animations/four_animated_icon.dart';
 import '202/animations/seven_animation_pasitioned.dart';
 import '202/animations/six_animated_list.dart';
 import '202/animations/three_animation_text.dart';
+import '202/cache/secure_context/secure_context_learn.dart';
+import '202/cache/shared_preference/shared_list_cache.dart';
+import '202/cache/shared_preference/shared_preferences_cache_learn.dart';
 import '202/deneme_view.dart';
 import '202/form_learn_view.dart';
 import '202/image_learn_202.dart';
@@ -106,7 +109,7 @@ class Main extends StatelessWidget {
         )
       ),
        */
-      home: const FormLearnView(),
+      home: const ShareContextLearn(),
       debugShowCheckedModeBanner: false,
     );
   }
