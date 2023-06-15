@@ -100,4 +100,5 @@ enum _SecureKeys{
 /// bu datalar kriptolu ve şifrelenmiştir yani! bu dataya erişilmesi biraz daha zordur bu sekilde kaydedildiğinde! ama sharedPref.
 /// de daha kolaydır erişmek!
 ///
-/// !!!!!!!TOKEN OLUŞTURMA VS BUNLARA BİR BAK!
+/// !!!!!!!TOKEN OLUŞTURMA VS BUNLARA BİR BAK! https://jwt.io/
+/// önce sharedde bi örnek app yap sonra token' a bi bak!

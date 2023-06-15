@@ -12,6 +12,7 @@ import 'package:lessonone/202/model_learn_view.dart';
 import 'package:lessonone/202/oop_learn_view.dart';
 import 'package:lessonone/202/service/deneme.dart';
 import 'package:lessonone/202/service/service_learn_view.dart';
+import 'package:lessonone/202/sheet_learn.dart';
 import 'package:lessonone/202/tab_learn.dart';
 import 'package:lessonone/202/theme/light_theme.dart';
 import 'package:lessonone/demos/color_demos_view.dart';
@@ -22,6 +23,7 @@ import '202/animations/four_animated_icon.dart';
 import '202/animations/seven_animation_pasitioned.dart';
 import '202/animations/six_animated_list.dart';
 import '202/animations/three_animation_text.dart';
+import '202/bottom_sheet_continue.dart';
 import '202/cache/secure_context/secure_context_learn.dart';
 import '202/cache/shared_preference/shared_list_cache.dart';
 import '202/cache/shared_preference/shared_preferences_cache_learn.dart';
@@ -109,7 +111,7 @@ class Main extends StatelessWidget {
         )
       ),
        */
-      home: const ShareContextLearn(),
+      home: const SheetLearnContinue(),
       debugShowCheckedModeBanner: false,
     );
   }
